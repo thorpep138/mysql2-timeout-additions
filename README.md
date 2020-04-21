@@ -1,5 +1,5 @@
 # mysql2-timeout-additions
-Provides timeout functionality for the `mysql2` module.
+Provides timeout functionality for the `mysql2` module (see https://github.com/sidorares/node-mysql2)
 
 # About
 Many users of the `mysql2` module find themselves having to implement custom timeout handlers for their queries. This involves cleaning up the connection when the timeout has been exceeded, writing a routine to kill the database query itself when the timeout is exceeded (which does not happen automatically as a result of closing the connection), and handling tcp errors on the client side. 
