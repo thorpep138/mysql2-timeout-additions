@@ -1,0 +1,24 @@
+{
+  "name": "mysql2-timeout-additions",
+  "version": "1.0.0",
+  "description": "Provides timeout functionality for the mysql2 module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thorpep138/mysql2-timeout-additions.git"
+  },
+  "keywords": [
+    "mysql2",
+    "timeouts",
+    "timeout"
+  ],
+  "author": "Peter Thorpe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thorpep138/mysql2-timeout-additions/issues"
+  },
+  "homepage": "https://github.com/thorpep138/mysql2-timeout-additions#readme"
+}
