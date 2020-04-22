@@ -1,6 +1,9 @@
 {
   "name": "mysql2-timeout-additions",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=7.6"
+  },
   "description": "Provides timeout functionality for the mysql2 module",
   "main": "index.js",
   "scripts": {
