@@ -1,5 +1,5 @@
 # mysql2-timeout-additions
-Provides timeout functionality for the `mysql2` module (see https://github.com/sidorares/node-mysql2)
+Provides timeout functionality for the `mysql2` module (see https://github.com/sidorares/node-mysql2), applied for both `queries` and `connection acquisition`. 
 
 [![npm](https://img.shields.io/npm/v/mysql2-timeout-additions.svg?style=flat-square)](https://www.npmjs.com/package/mysql2-timeout-additions 'npm')
 [![Node.js Version](https://img.shields.io/node/v/mysql2-timeout-additions.svg?style=flat-square 'Node.js Version')](https://www.npmjs.com/package/mysql2-timeout-additions)
