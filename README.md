@@ -2,8 +2,9 @@
 Provides timeout functionality for the `mysql2` module (see https://github.com/sidorares/node-mysql2)
 
 [![npm](https://img.shields.io/npm/v/mysql2-timeout-additions.svg?style=flat-square)](https://www.npmjs.com/package/mysql2-timeout-additions 'npm')
-[![Node.js Version](https://img.shields.io/node/v/mysql2-timeout-additions.svg?style=flat-square 'Node.js Version')](#)
-![npm](https://img.shields.io/npm/dt/mysql2-timeout-additions)
+[![Node.js Version](https://img.shields.io/node/v/mysql2-timeout-additions.svg?style=flat-square 'Node.js Version')](https://www.npmjs.com/package/mysql2-timeout-additions)
+[![npm](https://img.shields.io/npm/dt/mysql2-timeout-additions)](https://www.npmjs.com/package/mysql2-timeout-additions)
+
 # About
 Many users of the `mysql2` module find themselves having to implement custom timeout handlers for their queries. This involves cleaning up the connection when the timeout has been exceeded, writing a routine to kill the database query itself when the timeout is exceeded (which does not happen automatically as a result of closing the connection), and handling tcp errors on the client side. 
 
