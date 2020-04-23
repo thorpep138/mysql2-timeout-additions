@@ -10,7 +10,7 @@ Many users of the `mysql2` module find themselves having to implement custom tim
 
 It has been a heavily requested feature for the `mysql2` project, but the maintainers have decided that timeout functionality is beyond the scope of the database driver as per https://github.com/sidorares/node-mysql2/issues/185. 
 
-This module allows you to specify a `timeout` parameter for `promise pools` created by `mysql2` which will enhance all subsequent invocations to `pool.query` and `connection.query` to throw an error when the timeout threshold has been exceeded. This module will also seamlessly handle terminating the associated database queries and handle tcp connection errors on the client side in a way that ensures database queries are cleaned up after the client connection is terminated.
+This module allows you to specify a `timeout` parameter for `promise pools` created by `mysql2` which will enhance all subsequent invocations to `pool.query` and `connection.query` to throw an error when the timeout threshold has been exceeded. This module will also seamlessly handle terminating the associated database queries and handle tcp connection errors on the client side in a way that ensures database queries are cleaned up after the client connection is terminated. It will also throw the timeout error if fetching a new database connection takes longer than the specified threshold, even if no query has been made yet. 
 
 ## Install
 ```
