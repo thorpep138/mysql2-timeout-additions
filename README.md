@@ -38,7 +38,7 @@ mysql2Timeout.addTimeoutToPromisePool({
 });
 ```
 
-Now whenever a query takes longer than the specified number of seconds to execute, it will throw an error message that contains the offending query as a substring. Timeout functionality is added seamlessly to any invocations to `pool.query` as well as any invocations to `connection.query` on any connections acquired through `pool.getConnection`. 
+Now whenever a query takes longer than the specified number of seconds to execute, it will throw an error message that contains the offending query as a substring. Timeout functionality is added seamlessly to any invocations to `pool.query` as well as any invocations to `connection.query` on any connections acquired through `pool.getConnection`. The same constraints are applied to `pool.getConnection` itself so that connections must be returned within the time bounds specified or an error will be thrown.
 
 This module handles both cleaning up the connection object and returning it to the pool whenever a connection runs overtime, as well as killing the database query itself. It also handles killing the database query when the tcp socket on the client side fails by listening for the `PROTOCOL_SEQUENCE_TIMEOUT` error. 
 
